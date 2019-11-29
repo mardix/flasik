@@ -139,6 +139,7 @@ def init():
         print("%s is setup successfully!" % about.__title__)
         print("")
         print("> To do:")
+        print("- Run Pip Install to install other dependencies")
         print("- Edit application's config [ ./config.py ] ")
         print("- Create your Models/Database tables, then run [ asm-admin sync-models ]")        
         print("- Create your commands in [ cli.py ] and run your setup command [ asm setup ]")

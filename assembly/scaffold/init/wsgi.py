@@ -35,6 +35,11 @@ Import the base Assembly
 from assembly import Assembly
 
 """
+Importing Swagger Supporting Library
+"""
+from flasgger import Swagger
+
+"""
 If you want to use your views CLI, you can import them below
 """
 import main.cli
@@ -58,3 +63,13 @@ Initialize the application
 the 'app' variable is required
 """
 app = Assembly.init(__name__, APPS)
+
+"""
+Initialize the Swagger Docs
+"""
+app.config["SWAGGER"] = {
+    "title": app.config.get("SWAGGER_TITLE"),
+    "uiversion": app.config.get("SWAGGER_UI_VERSION"),
+}
+
+Swagger(app)
