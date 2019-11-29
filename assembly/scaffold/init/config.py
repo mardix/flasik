@@ -292,6 +292,18 @@ class BaseConfig(object):
     #: Directory to store cache if CACHE_TYPE is filesystem, it will
     CACHE_DIR = ""
 
+    #--------- SWAGGER ----------
+    #: Flassger is used to render Swagger Docs
+    
+    #: SWAGGER_TITLE
+    #: Name of the Application
+    SWAGGER_TITLE = "Assembly"
+
+    #: SWAGGER_UI_VERSION
+    #: The type of Swagger UI to render
+    #: 2 or 3 default: 3
+    SWAGGER_UI_VERSION = "3"
+
 
 # -------------------------- ENVIRONMENT BASED CONFIG ---------------------------
 """

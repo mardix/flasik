@@ -169,6 +169,8 @@ class Api(Assembly):
 
 - Inbuilt development server
 
+- Swagger Documentation
+
 
 ---
 
@@ -315,6 +317,9 @@ Two endpoints will be available:
 - `http://127.0.0.1:5000/` which will show an HTML
 - `http://127.0.0.1:5000/api/` which will a json response
 
+For Swagger Documentation:
+
+- `http://127.0.0.1:5000/apidocs` which will show you the Swagger UI
 
 --- 
 
