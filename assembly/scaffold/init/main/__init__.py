@@ -69,36 +69,11 @@ from assembly import (Assembly,
 class Index(Assembly):
 
     def index(self):
-        print("we are here in index route")
         return
 
     @request.cors
     @response.json
     def api(self):
-        """API Endpoint with CORS and JSON response
-    This is using docstrings for specifications.
-    ---
-    definitions:
-      Endpoint:
-        type: object
-        properties:
-          date:
-            type: date
-          description:
-            type: string
-        items:
-        $ref: '#/definitions/Endpoint'
-    responses:
-      200:
-        description: API Endpoint with CORS and JSON response
-        schema:
-          $ref: '#/definitions/Endpoint'
-        examples:
-          response: {
-              "date": "2019-11-29T18:28:07.125075+00:00",
-              "description": "API Endpoint with CORS and JSON response"
-          }
-    """
         return {
             "date": date.utcnow(),
             "description": "API Endpoint with CORS and JSON response"
